@@ -1,0 +1,127 @@
+/* style.css */
+
+/* Disco Background */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #ff00cc, #ffcc00, #33cc33, #00ccff, #ff66cc);
+    background-size: 400% 400%;
+    animation: disco-background 10s ease infinite;
+    overflow: hidden;
+  }
+  
+  @keyframes disco-background {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Centering and Styling Countdown Container */
+  .countdown-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 50px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #ffcc00;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+    background-color: #ff00cc;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 204, 0.8);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff66cc;
+    box-shadow: 0 0 20px rgba(255, 102, 204, 0.8);
+    transform: scale(1.1);
+  }
+  
+  /* Countdown Timer Styling */
+  #countdown, #days, #hours, #minutes, #seconds {
+    font-size: 2rem;
+    color: #ffcc00;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+  }
+  
+  /* Date Input Form Styling */
+  #date-input {
+    margin-top: 20px;
+  }
+  
+  #date-input input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 2px solid #ff00cc;
+  }
+  
+  #date-input button {
+    background-color: #33cc33;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #date-input button:hover {
+    background-color: #66ff66;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .countdown-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

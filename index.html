@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="countdown-container">
+    <h1>Countdown to My Birthday!</h1>
+    <p id="countdown"></p>
+    <p>Days: <span id="days"></span></p>
+    <p>Hours: <span id="hours"></span></p>
+    <p>Minutes: <span id="minutes"></span></p>
+    <p>Seconds: <span id="seconds"></span></p>
+    <button id="change-date-btn">Change Date & Time</button>
+
+    <div id="date-input" style="display: none;">
+      <label for="birthday-date">Enter your next birthday:</label>
+      <input type="date" id="birthday-date" />
+      <label for="birthday-time">Enter your birthday time:</label>
+      <input type="time" id="birthday-time" />
+      <button id="submit-date-btn">Submit</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
